@@ -7,6 +7,7 @@ public class Recursion {
         return getFutureRate(year-1, currVal, currYear, g) * (1+g);
     }
     public static void main(String[] args) {
-        System.out.println(getFutureRate(2031, 3261, 2026, 0.1f)); //considering 0.1 as past growth rate
+        System.out.println("Current Value: 3261");
+        System.out.println("Future Value: " + getFutureRate(2031, 3261, 2026, 0.1f)); //considering 0.1 as past growth rate
     }
 }
