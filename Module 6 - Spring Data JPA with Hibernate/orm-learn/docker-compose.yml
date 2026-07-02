@@ -1,0 +1,17 @@
+services:
+  mysql:
+    image: mysql:9.7.1
+    container_name: orm-learn
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: aritrachats
+      MYSQL_PASSWORD: AC@53506
+      MYSQL_DATABASE: ormlearn
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
